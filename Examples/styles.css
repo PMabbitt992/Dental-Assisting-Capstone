@@ -29,3 +29,32 @@ footer {
     background: #f7913d;
     color: white;
 }
+
+/* Styles for the information links in the index  */
+aside#infoLinks {
+    color: #f7913d;
+    float: right;
+    background-color: rgb(77, 77, 79);
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+}
+
+aside#infoLinks h1 {
+    font-size: 1.75em;
+    padding: 5px;
+}
+
+aside#infoLinks ol a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+aside#infoLinks ol:last-of-type li:last-of-type {
+    padding-bottom: 15px;
+}
+
+hr#infoHr {
+    width: 30px;
+    margin: 5px auto;
+    border-radius: 5px;
+}
