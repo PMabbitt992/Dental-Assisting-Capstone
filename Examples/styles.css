@@ -58,3 +58,23 @@ hr#infoHr {
     margin: 5px auto;
     border-radius: 5px;
 }
+
+/*testing stuff*/
+#horizontal {
+    padding-bottom: 5px;
+}
+
+.line {
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    width: 0px;
+    height: 2px;
+    left: 30px;
+    transition: width 1.25s;
+    transition-timing-function: ease-out;
+}
+
+#horizontal li:hover .line {
+    width: 75px;
+}
