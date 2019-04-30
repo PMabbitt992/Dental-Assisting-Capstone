@@ -1,10 +1,22 @@
+@font-face {
+    font-family: Engschrift;
+    src: url("DINEngschrift/DINEng");
+}
+
+@font-face {
+    font-family: Nunito Light;
+    src: url("Nunito_Sans/NunitoSans-Light.ttf");
+}
+
 body {
     background: url(chair.jpg);
-    background-size: cover
+    background-size: cover;
+    font-family: 'Nunito Light', sans-serif
 }
 
 header {
     background: #f7913d;
+    font-family: 'Engschrift', sans-serif;
 }
 
 img#logo {
@@ -20,7 +32,7 @@ li a {
     color: white;
 }
 
-.box {
+.textbox {
     background-color: rgba(255, 255, 255, 0.603);
     border: 3px solid rgba(255, 255, 255, 0.87);
 }
@@ -29,4 +41,5 @@ footer {
     background: #f7913d;
     color: white;
     height: 65px;
+    font-family: 'Engschrift', sans-serif;
 }

@@ -4,7 +4,7 @@ img#logo {
 
 nav ul li {
     display: inline;
-    margin: 8%;
+    margin: 10.25%;
 }
 
 aside#left {
@@ -36,4 +36,19 @@ footer {
     width: 100%;
     text-align: center;
     height: 40px;
+}
+
+aside img {
+    height: 50%;
+    width: 100%;
+}
+
+article img {
+    height: 100%;
+    width: 100%;
+}
+
+#brush {
+    height: 50%;
+    width: 100%;
 }
