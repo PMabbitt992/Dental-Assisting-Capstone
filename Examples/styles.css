@@ -19,9 +19,7 @@ header {
     font-family: 'Engschrift', sans-serif;
 }
 
-img#logo {
-    width: 37%;
-}
+
 
 nav ul li {
     list-style-type: none;
@@ -32,9 +30,20 @@ li a {
     color: white;
 }
 
+aside,
+article {
+    box-shadow: -5px 5px 10px rgb(29, 29, 29);
+}
+
 .textbox {
-    background-color: rgba(255, 255, 255, 0.603);
-    border: 3px solid rgba(255, 255, 255, 0.87);
+    background-color: rgb(77, 77, 79);
+    color: white;
+}
+
+.textbox,
+.box {
+    border: 3px solid #f7913d;
+    border-radius: 2%;
 }
 
 footer {
@@ -42,4 +51,46 @@ footer {
     color: white;
     height: 65px;
     font-family: 'Engschrift', sans-serif;
+}
+
+
+
+.textbox h1 {
+    font-size: 1.75em;
+    padding: 5px;
+    color: #f7913d;
+}
+
+.textbox h4 {
+    color: #f7913d;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.textbox a {
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+.textbox a:hover {
+    color: white;
+    font-size: 15px;
+    text-shadow: 0px 0px 10px white;
+}
+
+.textbox a:link,
+.textbox a:visited {
+    color: #f7913d;
+}
+
+button {
+    color: #f7913d;
+    font-size: 15px;
+    margin-left: 5em;
+    margin-top: .5em;
+}
+
+button:hover {
+    box-shadow: 0px 0px 5px rgb(255, 186, 59);
 }
