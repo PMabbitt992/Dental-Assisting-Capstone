@@ -14,7 +14,6 @@ aside#left {
     height: 500px;
 }
 
-
 aside#right {
     float: right;
     width: 20%;
@@ -27,15 +26,6 @@ article {
     margin: auto;
     height: 500px;
     margin-top: 100px;
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    height: 38px;
 }
 
 aside img {
@@ -63,4 +53,18 @@ p {
 h1,
 h4 {
     margin: 5px;
+}
+
+footer {
+    height: 20px;
+}
+
+
+/* Responsive Design*/
+@media only screen and (max-width: 650px) {
+    html {}
+}
+
+@media only screen and (min-width: 1024px) {
+    html {}
 }
