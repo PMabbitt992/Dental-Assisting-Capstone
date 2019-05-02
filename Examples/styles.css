@@ -10,7 +10,7 @@
 
 body {
     background: url(chair.jpg);
-    font-family: 'Nunito Light', sans-serif
+    font-family: 'Nunito Light', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -139,7 +139,7 @@ hr#infoHr {
     border-radius: 5px;
 }
 
-/*testing stuff*/
+/*Hover effect for the NAV */
 #horizontal ul li a {
     position: relative;
 }
