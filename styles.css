@@ -1,15 +1,15 @@
 @font-face {
     font-family: Engschrift;
-    src: url("DINEngschrift/DINEng");
+    src: url("Assets/Fonts/DINEngschrift/DINEng");
 }
 
 @font-face {
     font-family: Nunito Light;
-    src: url("Nunito_Sans/NunitoSans-Light.ttf");
+    src: url("Assets/Fonts/Nunito_Sans/NunitoSans-Light.ttf");
 }
 
 body {
-    background: url(chair.jpg), #f7913d;
+    background: url(Assets/chair.jpg), #f7913d;
     font-family: 'Nunito Light', sans-serif;
     padding: 0;
     margin: 0;
