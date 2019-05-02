@@ -28,6 +28,17 @@ article {
     margin-top: 100px;
 }
 
+#single {
+    margin: 0px;
+    float: left;
+}
+
+#hosa {
+    height: 500px;
+    width: 45%;
+    border: none;
+}
+
 aside img {
     height: 49.5%;
     width: 100%;
@@ -40,11 +51,7 @@ article img {
     border-radius: 2%;
 }
 
-#brush {
-    height: 33.5%;
-    width: 100%;
-    border-radius: 2%;
-}
+
 
 p {
     margin: 15px;
