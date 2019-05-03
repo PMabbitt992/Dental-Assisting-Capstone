@@ -168,11 +168,28 @@ hr#infoHr {
 }
 
 /* Trying to make the image switch on the index look cooler */
+.box {
+    position: relative;
+}
+
 .idkWhatImDoing {
     background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgba(255, 255, 255, .7) 0%, rgba(125, 125, 125, .9), 75%, rgba(0, 0, 0, .5) 100%);
-    z-index: 2;
+    background: linear-gradient(322deg, rgba(255, 255, 255, .5) 0%, rgba(125, 125, 125, .7) 80%, rgba(0, 0, 0, .9) 100%);
     width: 100%;
     height: 50%;
-    transition: z-index 2s;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.maybeIKnowWhatImDoing {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(322deg, rgba(255, 255, 255, .75) 0%, rgba(125, 125, 125, .75) 80%, rgba(0, 0, 0, .75) 100%);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    opacity: 0;
 }

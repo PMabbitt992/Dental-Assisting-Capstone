@@ -6,6 +6,48 @@ var locationImg2 = 0;
 var locationImg3 = 0;
 var locationImg4 = 0;
 
+function gradientShow() {
+    // Shows the gradient 
+    var currentDiv = document.getElementById("topLeftDiv");
+    currentDiv.style.transition = "opacity, 2s";
+    currentDiv.style.opacity = "1";
+
+    // Changes the gradient covering the image before changing it
+    setTimeout(gradient1(), 4000);
+    setTimeout(gradient2(), 6000);
+    // Changes the img
+    topLeftImg();
+
+    // Hides the gradient after new image 
+    setTimeout(gradientHide1(), 8000);
+    setTimeout(gradientHide2(), 10000);
+
+    // currentDiv.style.opacity = "0";
+}
+
+function gradient1() {
+    // Change the gradient to slightly cover the image 
+    var currentDiv = document.getElementById("topLeftDiv");
+    currentDiv.style.background = "linear-gradient(322deg, rgba(255, 255, 255, .65) 0%, rgba(125, 125, 125, .8) 50%, rgba(0, 0, 0, 1) 100%)";
+}
+
+function gradient2() {
+    // Change the gradient to  cover the image 
+    var currentDiv = document.getElementById("topLeftDiv");
+    currentDiv.style.background = "linear-gradient(322deg, rgba(255, 255, 255, .8) 0%, rgba(125, 125, 125, .95) 20%, rgba(0, 0, 0, 1) 100%)";
+}
+
+function gradientHide1() {
+    // Change the gradient to "move" off the image 
+    var currentDiv = document.getElementById("topLeftDiv");
+    currentDiv.style.background = "linear-gradient(322deg, rgba(255, 255, 255, .65) 0%, rgba(125, 125, 125, .8) 50%, rgba(0, 0, 0, 1) 100%)";
+}
+
+function gradientHide2() {
+    var currentDiv = document.getElementById("topLeftDiv");
+    currentDiv.style.background = "linear-gradient(322deg, rgba(255, 255, 255, .5) 0%, rgba(125, 125, 125, .7) 80%, rgba(0, 0, 0, .9) 100%)";
+}
+
 // Changes the top left image on the index 
 function topLeftImg() {
     // Gets the image element of the top left image 
@@ -28,6 +70,10 @@ function topLeftImg() {
     // Calls the next image(bottom left) to change half a second after the function runs 
     window.setTimeout(botLeftImg, 500);
 }
+
+
+
+
 
 // Changes the bottom left image in the index page 
 function botLeftImg() {
@@ -76,5 +122,6 @@ function botRightImg() {
 
 // Only runs the functions on the index page 
 if (document.location.href === "file:///Users/cwebdale006/www/capstone/Dental-Assisting-Capstone/Examples/index.html") {
-    window.setInterval(topLeftImg, 5000);
+    // change to 5000
+    window.setInterval(gradientShow, 20000);
 }
