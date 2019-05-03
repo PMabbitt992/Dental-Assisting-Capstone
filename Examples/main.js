@@ -76,5 +76,18 @@ function botRightImg() {
 
 // Only runs the functions on the index page 
 if (document.location.href === "file:///Users/cwebdale006/www/capstone/Dental-Assisting-Capstone/Examples/index.html") {
-    window.setInterval(topLeftImg, 5000);
+    window.setInterval(topLeftImg, 7500);
+}
+
+//=========================================================
+// Functions for the form on the CTSO page 
+// custom validity 
+document.getElementById("submit").onclick = clearForm;
+
+// Resets the form when called 
+function clearForm() {
+    document.getElementById("name").textContent = "";
+    document.getElementById("email").textContent = "";
+    document.getElementById("phone").textContent = "";
+    document.getElementById("questions").textContent = "";
 }
