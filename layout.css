@@ -11,32 +11,42 @@ aside#left {
     float: left;
     width: 20%;
     margin: 40px 0px 0px 30px;
-    height: 500px;
+    height: 550px;
 }
 
 aside#right {
     float: right;
     width: 20%;
-    height: 500px;
+    height: 550px;
     margin: 40px 30px 0px 0px;
 }
 
 article {
     width: 45%;
     margin: auto;
-    height: 500px;
+    height: 550px;
     margin-top: 100px;
+}
+
+article::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #single {
     margin: 0px;
     float: left;
+    width: 53%;
+    margin: 100px 5px 5px;
 }
 
 #hosa {
-    height: 500px;
+    height: 60%;
     width: 45%;
     border: none;
+    float: left;
+    margin: 5px;
 }
 
 aside img {
@@ -66,12 +76,11 @@ footer {
     height: 20px;
 }
 
+#questionBox {
+    margin: 15px;
+}
 
 /* Responsive Design*/
-@media only screen and (max-width: 650px) {
-    html {}
-}
+@media only screen and (max-width: 650px) {}
 
-@media only screen and (min-width: 1024px) {
-    html {}
-}
+@media only screen and (min-width: 1300px) {}
