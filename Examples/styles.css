@@ -166,3 +166,13 @@ hr#infoHr {
 #horizontal ul li a:hover:after {
     width: 70%;
 }
+
+/* Trying to make the image switch on the index look cooler */
+.idkWhatImDoing {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, .7) 0%, rgba(125, 125, 125, .9), 75%, rgba(0, 0, 0, .5) 100%);
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    transition: z-index 2s;
+}
