@@ -95,7 +95,7 @@ footer {
 
 .textbox a:hover {
     color: white;
-    font-size: 15px;
+    font-size: 1.9vw;
     text-shadow: 0px 0px 10px white;
 }
 
@@ -138,12 +138,6 @@ aside#infoLinks ol:last-of-type li:last-of-type {
     padding-bottom: 15px;
 }
 
-hr#infoHr {
-    width: 30px;
-    margin: 5px auto;
-    border-radius: 5px;
-}
-
 /*testing stuff*/
 #horizontal ul li a {
     position: relative;
@@ -170,4 +164,19 @@ hr#infoHr {
 
 #horizontal ul li a:hover:after {
     width: 70%;
+}
+
+/* Bigger than 1300 */
+@media only screen and (min-width: 1300px) {
+    .textbox a:hover {
+        font-size: 1.4vw;
+    }
+}
+
+
+/* Smaller than 650 */
+@media only screen and (max-width: 850px) {
+    .textbox a:hover {
+        font-size: 2.4vw;
+    }
 }
