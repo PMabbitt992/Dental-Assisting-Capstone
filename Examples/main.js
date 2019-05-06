@@ -41,7 +41,7 @@ function botLeftImg() {
         locationImg2 = 0;
     }
 
-    // Calls the next image(top right) to change half a second after this function runs 
+    // Calls the next image(top right) to three quarters of a second after this function runs 
     window.setTimeout(topRightImg, 750);
 }
 
@@ -75,19 +75,10 @@ function botRightImg() {
 }
 
 // Only runs the functions on the index page 
-if (document.location.href === "file:///Users/cwebdale006/www/capstone/Dental-Assisting-Capstone/Examples/index.html") {
+if (document.getElementById("topLeft")) {
     window.setInterval(topLeftImg, 7500);
 }
 
 //=========================================================
 // Functions for the form on the CTSO page 
 // custom validity 
-document.getElementById("submit").onclick = clearForm;
-
-// Resets the form when called 
-function clearForm() {
-    document.getElementById("name").textContent = "";
-    document.getElementById("email").textContent = "";
-    document.getElementById("phone").textContent = "";
-    document.getElementById("questions").textContent = "";
-}

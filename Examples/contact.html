@@ -32,14 +32,16 @@
             <p>
                 ---------------------<br>
                 Name<br>
-                <input type="text" name="name" id="name"> <br>
+                <input type="text" name="fName" id="fName" required> <br>
                 Email<br>
-                <input type="email" name="email" id="email"> <br>
+                <input type="email" name="email" id="email" required> <br>
                 Phone Number<br>
-                <input type="tel" name="phone" id="phone"> <br>
+                <input type="tel" name="phone" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+                    placeholder="(nnn) nnn-nnnn" required> <br>
                 Any questions?<br>
                 <textarea rows="18" cols="40" id="questions"></textarea>
-                <button type="button" id="submit">Submit Form</button>
+                <!-- <button type="button" id="submit">Submit Form</button> -->
+                <input type="submit" id="submit" value="Submit">
         </form>
         </p>
     </aside>
