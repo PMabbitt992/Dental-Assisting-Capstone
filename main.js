@@ -12,7 +12,7 @@ function topLeftImg() {
     var currentImg = document.getElementById("topLeft");
 
     // Array of images to cycle through 
-    var images = ["timer_images/check-up.jpg", "timer_images/dental.jpg", "0049_Dental_8.jpg", "timer_images/lady_dentist.jpg", "timer_images/retainer.jpg"];
+    var images = ["Assets/timer_images/check-up.jpg", "Assets/timer_images/dental.jpg", "Assets/0049_Dental_8.jpg", "Assets/timer_images/lady_dentist.jpg", "Assets/timer_images/retainer.jpg"];
 
     // Changes the src attribute of the image element to a different image in the array of "images"
     currentImg.src = images[locationImg1];
@@ -32,7 +32,7 @@ function topLeftImg() {
 // Changes the bottom left image in the index page 
 function botLeftImg() {
     var currentImg = document.getElementById("botLeft");
-    var images = ["timer_images/retainer.jpg", "timer_images/3_peopleLooking.jpg", "0048_Dental_15.jpg", "timer_images/floating_retainer.jpeg", "timer_images/blue_doctor_man.jpg"];
+    var images = ["Assets/timer_images/retainer.jpg", "Assets/timer_images/3_peopleLooking.jpg", "Assets/0048_Dental_15.jpg", "Assets/timer_images/floating_retainer.jpeg", "Assets/timer_images/blue_doctor_man.jpg"];
 
     currentImg.src = images[locationImg2];
     locationImg2++;
@@ -48,7 +48,7 @@ function botLeftImg() {
 // Changes the top right image on the index
 function topRightImg() {
     var currentImg = document.getElementById("topRight");
-    var images = ["timer_images/lady_check-up.jpg", "timer_images/grey-haired_doctor.jpg", "CTE_53.jpg", "timer_images/blonde_doctor.jpg", "timer_images/toothbrush.jpg"];
+    var images = ["Assets/timer_images/lady_check-up.jpg", "Assets/timer_images/grey-haired_doctor.jpg", "Assets/CTE_53.jpg", "Assets/timer_images/blonde_doctor.jpg", "Assets/timer_images/toothbrush.jpg"];
 
     currentImg.src = images[locationImg3];
     locationImg3++;
@@ -64,7 +64,7 @@ function topRightImg() {
 // Changes the bottom right image on the index 
 function botRightImg() {
     var currentImg = document.getElementById("botRight");
-    var images = ["timer_images/red-dentist-table.jpeg", "timer_images/2-dentist-people.jpg", "0050_Dental_5.jpg", "timer_images/dental-office.jpg", "timer_images/x-ray.jpg"];
+    var images = ["Assets/timer_images/red-dentist-table.jpeg", "Assets/timer_images/2-dentist-people.jpg", "Assets/0050_Dental_5.jpg", "Assets/timer_images/dental-office.jpg", "Assets/timer_images/x-ray.jpg"];
 
     currentImg.src = images[locationImg4];
     locationImg4++;
