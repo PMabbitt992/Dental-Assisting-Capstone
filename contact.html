@@ -9,13 +9,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+
 </head>
 
 <body>
     <header>
         <img id="logo" src="Assets/logo_white.png"> <img src="Assets/da_logo.png">
         <nav id="horizontal">
+            <a href="#top" id="navicon"><i class="fas fa-bars"></i></a>
             <ul>
                 <li> <a href="index.html">Home</a></li>
                 <li> <a href="about.html">About</a></li>
@@ -27,29 +30,27 @@
     </header>
 
     <aside id="form" class="textbox">
-
         <form>
             <h1>Contact Form</h1>
             <p>
                 ---------------------<br>
                 Name<br>
-                <input type="text" name="name"> <br>
+                <input type="text" name="name" required> <br>
                 Email<br>
-                <input type="email" name="email"> <br>
+                <input type="email" name="email" required> <br>
                 Phone Number<br>
                 <input type="tel" name="phone"> <br>
                 <div id="questionBox">
                     Any questions?<br>
                     <textarea rows="18" cols="35"></textarea>
-                    <button type="button">Submit Form</button>
+                    <input type="submit">
                 </div>
             </p>
         </form>
-
     </aside>
 
-    <aside id="address" class="textbox">
 
+    <aside id="address" class="textbox">
         <h4>CONTACT</h4><br>
         <p>
             Western Maricopa Education Center<br>
@@ -72,14 +73,15 @@
             <a href="https://www.instagram.com/westmecnwcdental/">@westmecnwcdental</a>
         </p>
 
-
     </aside>
+
 
     <article class="box" id="campus">
 
         <img src="Assets/NWC.jpg">
 
     </article>
+    <script src="main.js"></script>
 </body>
 
 

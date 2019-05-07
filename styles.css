@@ -79,6 +79,7 @@ footer {
     font-size: 1.75em;
     padding: 5px;
     color: #f7913d;
+    line-height: 1.75em;
 }
 
 .textbox h4 {
@@ -93,6 +94,7 @@ footer {
     transition: font-size, .5s;
     transition: text-shadow, .6s;
 }
+
 .textbox a:hover {
     color: white;
     font-size: 1.9vw;
@@ -115,6 +117,7 @@ button:hover {
     box-shadow: 0px 0px 5px rgb(255, 186, 59);
 
 }
+
 #questions {
     width: 100%;
     height: 15em;
@@ -126,6 +129,7 @@ button:hover {
     width: 40%;
 
 }
+
 #submit:hover {
     box-shadow: 0px 0px 5px rgb(255, 186, 59);
 }
@@ -133,6 +137,7 @@ button:hover {
 #submit:active {
     background-color: rgb(77, 77, 79);
 }
+
 /* Styles for the information links in the index  */
 aside#infoLinks {
     color: #f7913d;
@@ -146,6 +151,7 @@ aside#infoLinks h1 {
     font-size: 1.75em;
     padding: 5px;
 }
+
 aside#infoLinks ol a {
     text-decoration: none;
 
@@ -155,10 +161,13 @@ aside#infoLinks ol a {
 aside#infoLinks ol:last-of-type li:last-of-type {
     padding-bottom: 15px;
 }
+
 /*Hover effect for the NAV */
-    position: relative;
+
 #horizontal ul li a {
+    position: relative;
 }
+
 #horizontal a,
 #horizontal a:before,
 #horizontal a:after {
@@ -179,7 +188,17 @@ aside#infoLinks ol:last-of-type li:last-of-type {
 }
 
 #horizontal ul li a:hover:after {
-    width: 70%;
+    width: 60%;
+}
+
+/* Hides navicon on computer view */
+#navicon {
+    display: none;
+
+}
+
+.col-1-2 {
+    width: 50%;
 }
 
 /* Bigger than 1300 */
@@ -187,12 +206,63 @@ aside#infoLinks ol:last-of-type li:last-of-type {
     .textbox a:hover {
         font-size: 1.4vw;
     }
+
+    #horizontal ul li a:hover:after {
+        width: 50%;
+    }
 }
 
 
 /* Smaller than 650 */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 650px) {
+
+    aside#address,
+    aside#form {
+        width: 40%;
+    }
+
+
     .textbox a:hover {
         font-size: 2.4vw;
+    }
+
+    .textbox p {
+        font-size: 1em;
+    }
+
+    /* Navicon styles */
+    i.fa-bars {
+        color: white;
+        padding: 4px;
+    }
+
+    /* Shows the navicon when viewed on mobile screen */
+    #navicon {
+        display: block;
+    }
+
+    #horizontal ul {
+        display: none;
+    }
+
+    a#navicon:hover+ul,
+    nav#horizontal ul:hover {
+        display: block;
+    }
+
+    .fa-bars {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    /*Changes the way the nav links are underlined in the different viewport */
+    #horizontal ul li a:hover:after {
+        width: 120%;
+    }
+
+
+    /*Changes background to fill space left by images taken out*/
+    form {
+        width: 100%;
     }
 }
