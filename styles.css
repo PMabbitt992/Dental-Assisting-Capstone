@@ -90,9 +90,9 @@ footer {
 .textbox a {
     text-decoration: none;
     padding: 10px;
-
+    transition: font-size, .5s;
+    transition: text-shadow, .6s;
 }
-
 .textbox a:hover {
     color: white;
     font-size: 1.9vw;
@@ -113,8 +113,26 @@ button {
 
 button:hover {
     box-shadow: 0px 0px 5px rgb(255, 186, 59);
+
+}
+#questions {
+    width: 100%;
+    height: 15em;
 }
 
+#submit {
+    color: #f7913d;
+    font-size: 1em;
+    width: 40%;
+
+}
+#submit:hover {
+    box-shadow: 0px 0px 5px rgb(255, 186, 59);
+}
+
+#submit:active {
+    background-color: rgb(77, 77, 79);
+}
 /* Styles for the information links in the index  */
 aside#infoLinks {
     color: #f7913d;
@@ -128,21 +146,19 @@ aside#infoLinks h1 {
     font-size: 1.75em;
     padding: 5px;
 }
-
 aside#infoLinks ol a {
     text-decoration: none;
+
     padding: 10px;
 }
 
 aside#infoLinks ol:last-of-type li:last-of-type {
     padding-bottom: 15px;
 }
-
-/*testing stuff*/
-#horizontal ul li a {
+/*Hover effect for the NAV */
     position: relative;
+#horizontal ul li a {
 }
-
 #horizontal a,
 #horizontal a:before,
 #horizontal a:after {
@@ -158,8 +174,8 @@ aside#infoLinks ol:last-of-type li:last-of-type {
     width: 0;
     content: ".";
     color: transparent;
-    background: white;
     height: 2px;
+    background: white;
 }
 
 #horizontal ul li a:hover:after {
