@@ -73,7 +73,9 @@ footer {
     font-family: 'Engschrift', sans-serif;
 }
 
-
+.textbox p input {
+    margin-bottom: 1vh;
+}
 
 .textbox h1 {
     font-size: 1.75em;
@@ -189,6 +191,24 @@ aside#infoLinks ol:last-of-type li:last-of-type {
 
 #horizontal ul li a:hover:after {
     width: 60%;
+}
+
+/* Inline form validation */
+input:focus,
+textarea:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+input#name:valid,
+input#email:valid,
+input#phone:valid {
+    background-color: rgb(210, 255, 210);
+}
+
+input#name:focus:invalid,
+input#email:focus:invalid,
+input#phone:focus:invalid {
+    background-color: rgb(255, 197, 197);
 }
 
 /* Hides navicon on computer view */

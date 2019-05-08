@@ -35,16 +35,16 @@
             <p>
                 ---------------------<br>
                 Name<br>
-                <input type="text" name="name" required> <br>
+                <input type="text" name="name" id="name" required> <br>
                 Email<br>
-                <input type="email" name="email" required> <br>
+                <input type="email" name="email" id="email" required> <br>
                 Phone Number<br>
-                <input type="tel" name="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+                <input type="tel" name="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" id="phone"
                     placeholder="(nnn) nnn-nnnn" required> <br>
                 <div id="questionBox">
                     Any questions?<br>
                     <textarea rows="18" cols="35"></textarea>
-                    <input type="submit" id="submit">
+                    <input type="submit" id="submit" value="Submit">
                 </div>
             </p>
         </form>
