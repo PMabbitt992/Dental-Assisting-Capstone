@@ -109,7 +109,7 @@ textarea {
 }
 
 /* Responsive Design*/
-/* Smaller than 650 */
+/* Smaller than 850 */
 @media only screen and (max-width: 850px) {
     p {
         font-size: 2.5vw;
@@ -148,7 +148,7 @@ textarea {
 
 }
 
-/* Bigger than 1300 */
+/* Bigger than 1000 */
 @media only screen and (min-width: 1000px) {
     p {
         font-size: 1.5vw;

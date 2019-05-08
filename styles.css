@@ -201,8 +201,8 @@ aside#infoLinks ol:last-of-type li:last-of-type {
     width: 50%;
 }
 
-/* Bigger than 1300 */
-@media only screen and (min-width: 1300px) {
+/* Bigger than 1000 */
+@media only screen and (min-width: 1000px) {
     .textbox a:hover {
         font-size: 1.4vw;
     }
@@ -213,8 +213,8 @@ aside#infoLinks ol:last-of-type li:last-of-type {
 }
 
 
-/* Smaller than 650 */
-@media only screen and (max-width: 650px) {
+/* Smaller than 850 */
+@media only screen and (max-width: 850px) {
 
     aside#address,
     aside#form {
@@ -223,7 +223,7 @@ aside#infoLinks ol:last-of-type li:last-of-type {
 
 
     .textbox a:hover {
-        font-size: 2.4vw;
+        font-size: 2.5vw;
     }
 
     .textbox p {
