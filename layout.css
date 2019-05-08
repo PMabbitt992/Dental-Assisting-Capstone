@@ -1,3 +1,8 @@
+html {
+    width: 100%;
+    height: 850px;
+}
+
 img#logo {
     width: 37%;
 }
@@ -36,7 +41,7 @@ aside#address {
 article {
     width: 45%;
     margin: auto;
-    min-height: 55%;
+    min-height: 75%;
     margin-top: 100px;
 }
 
@@ -47,18 +52,21 @@ article::after {
 }
 
 #single {
-    margin: 0px;
-    float: left;
-    width: 53%;
-    margin: 100px 5px 5px;
+    width: 75%;
+    margin: 10em auto;
 }
 
 #hosa {
-    height: 60%;
+    height: 50%;
     width: 45%;
     border: none;
     float: left;
     margin: 5px;
+}
+
+#NWC {
+    height: 100%;
+    width: 100%;
 }
 
 aside img {
@@ -104,21 +112,32 @@ footer {
     #right,
     #campus {
         visibility: hidden;
-    }
-
-    #info,
-    #form,
-    #adress {
-        float: none;
+        display: none;
     }
 
     article {
         width: 75%;
     }
+
+
+    aside#info {
+        width: 45%;
+    }
+
+    aside#form,
+    aside#address {
+        width: 40%;
+    }
+
+    article#about {
+        float: right;
+        width: 40%;
+        margin: 40px 30px 0px 0px;
+    }
 }
 
 /* Bigger than 1300 */
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1000px) {
     p {
         font-size: 1.5vw;
     }
