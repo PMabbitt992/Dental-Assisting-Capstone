@@ -39,11 +39,12 @@
                 Email<br>
                 <input type="email" name="email" required> <br>
                 Phone Number<br>
-                <input type="tel" name="phone"> <br>
+                <input type="tel" name="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+                    placeholder="(nnn) nnn-nnnn" required> <br>
                 <div id="questionBox">
                     Any questions?<br>
                     <textarea rows="18" cols="35"></textarea>
-                    <input type="submit">
+                    <input type="submit" id="submit">
                 </div>
             </p>
         </form>
