@@ -8,6 +8,7 @@
     src: url("Assets/Fonts/Nunito_Sans/NunitoSans-Light.ttf");
 }
 
+/*Basic background image and fonts */
 body {
     background: url('Assets/chair.jpg'), #f7913d;
     background-attachment: fixed;
@@ -17,13 +18,14 @@ body {
     margin: 0;
 }
 
+/*Font and background color */
 header {
     background: #f7913d;
     font-family: 'Engschrift', sans-serif;
     padding-bottom: 5px;
 }
 
-
+/*Sizing styles for the nav */
 nav {
     margin: 0 auto;
 }
@@ -52,8 +54,6 @@ article {
     box-shadow: -5px 5px 10px rgb(29, 29, 29);
     text-align: center;
 }
-
-
 
 .textbox {
     background-color: rgb(77, 77, 79);
@@ -157,7 +157,6 @@ aside#infoLinks h1 {
 
 aside#infoLinks ol a {
     text-decoration: none;
-
     padding: 10px;
 }
 
@@ -166,7 +165,6 @@ aside#infoLinks ol:last-of-type li:last-of-type {
 }
 
 /*Hover effect for the NAV */
-
 #horizontal ul li a {
     position: relative;
 }
@@ -216,10 +214,6 @@ input#phone:focus:invalid {
 #navicon {
     display: none;
 
-}
-
-.col-1-2 {
-    width: 50%;
 }
 
 /* Bigger than 1000 */

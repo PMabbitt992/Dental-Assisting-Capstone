@@ -20,7 +20,7 @@ function topLeftImg() {
     // Changes the value of the variable to go to the next item in the index 
     locationImg1++;
 
-    // Once the images have cycles to the last one in the array, resets to the first image 
+    // Once the images have cycled to the last one in the array, resets to the first image 
     if (locationImg1 >= images.length) {
         locationImg1 = 0;
     }
@@ -78,7 +78,3 @@ function botRightImg() {
 if (document.getElementById("topLeft")) {
     window.setInterval(topLeftImg, 7500);
 }
-
-//=========================================================
-// Functions for the form on the CTSO page 
-// custom validity 
