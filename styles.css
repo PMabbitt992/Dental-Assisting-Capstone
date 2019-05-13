@@ -108,6 +108,12 @@ footer {
     color: #f7913d;
 }
 
+/* Styles for the links in the aside box */
+aside#info p {
+    margin-top: 0;
+
+}
+
 button {
     color: #f7913d;
     font-size: 15px;

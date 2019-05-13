@@ -1,26 +1,32 @@
+/* Sets the height and width of the browser window */
 html {
     width: 100%;
     height: 850px;
 }
 
+/* Sets the width of the image with the id "logo" */
 img#logo {
     width: 37%;
 }
 
+/* Sets the width of the element with the id "logo2" */
 #logo2 {
     width: 20%;
 }
 
+/* Sets the width/height of the header to the full length */
 header {
     width: 100%;
     height: 100%;
 }
 
+/* Styles for list elements in the NAV */
 nav ul li {
     display: inline;
     margin: auto;
 }
 
+/* Floats aside elements to the left of the web page */
 aside#left,
 aside#form,
 aside#info {
@@ -30,6 +36,7 @@ aside#info {
 
 }
 
+/* Floats aside elements to the right of the web page*/
 aside#right,
 aside#address {
     float: right;
@@ -37,15 +44,18 @@ aside#address {
     margin: 40px 30px 0px 0px;
 }
 
+/* Adds a minimum height aside elements can shrink to*/
 aside#info,
 aside#address {
     min-height: 525px;
 }
 
+/* Adds padding to the top of h4 elements in the element with an id of "info" */
 #info h4 {
     padding-top: 25px;
 }
 
+/* Styles affecting the article element */
 article {
     width: 45%;
     margin: auto;
@@ -53,12 +63,13 @@ article {
     margin-top: 100px;
 }
 
-
+/* Styles affecting the text box in the CTSO.html page */
 #single {
     width: 75%;
     margin: 7em auto;
 }
 
+/* Changes the height/width of the HOSA logo on the CTSO.html page */
 #hosa {
     height: 50%;
     width: 45%;
@@ -67,43 +78,49 @@ article {
     margin: 5px;
 }
 
+/* Sets the height and width of an image to fill the container it is placed in */
 #NWC {
     height: 100%;
     width: 100%;
 }
 
+/* Changes the height/width of an image nested in an aside element and adds a border radius */
 aside img {
     height: 49.5%;
     width: 100%;
     border-radius: 2%;
 }
 
+/* Changes the height/width of an image nested in an article element and adds a border radius */
 article img {
     height: 100%;
     width: 100%;
     border-radius: 2%;
 }
 
-
-
+/* Changes font size of paragraph elements and adds a margin on all 4 sides */
 p {
     margin: 15px;
     font-size: 2vw;
 }
 
+/* Adds a margin on all 4 sides of h1 and h4 elements */
 h1,
 h4 {
     margin: 5px;
 }
 
+/* Sets the footer element to be 20 pixels in height */
 footer {
     height: 20px;
 }
 
+/* Adds a margin on all 4 sides of the textarea element with an id questionBox */
 #questionBox {
     margin: 15px;
 }
 
+/* Sets the width of a textarea element */
 textarea {
     width: 75%;
 }
@@ -111,10 +128,13 @@ textarea {
 /* Responsive Design*/
 /* Smaller than 850 */
 @media only screen and (max-width: 850px) {
+
+    /* Increases the font size of paragraph elements when viewed on smaller devices */
     p {
         font-size: 2.5vw;
     }
 
+    /* Hides images on mobile */
     #left,
     #right,
     #campus {
@@ -122,26 +142,30 @@ textarea {
         display: none;
     }
 
+    /* Increases the width of article elements to be viewed easier */
     article {
         width: 75%;
     }
 
-
+    /* Increases the width of the aside element with an id of "info" */
     aside#info {
         width: 45%;
     }
 
+    /* Increases the width of aside element with ids of "form", and "address" */
     aside#form,
     aside#address {
         width: 40%;
     }
 
+    /* Styles affecting the article element on the about.html */
     article#about {
         float: right;
         width: 40%;
         margin: 40px 30px 0px 0px;
     }
 
+    /* Hides unnecessary information on the about.html when viwed on small screens */
     article#about p:last-of-type {
         display: none;
     }
@@ -150,6 +174,8 @@ textarea {
 
 /* Bigger than 1000 */
 @media only screen and (min-width: 1000px) {
+
+    /* Decreases the font size when viewed on larger devices */
     p {
         font-size: 1.5vw;
     }

@@ -31,6 +31,7 @@ function topLeftImg() {
 
 // Changes the bottom left image in the index page 
 function botLeftImg() {
+    // same as topLeftImg, but for the bottom left image
     var currentImg = document.getElementById("botLeft");
     var images = ["Assets/timer_images/retainer.jpg", "Assets/timer_images/3_peopleLooking.jpg", "Assets/0048_Dental_15.jpg", "Assets/timer_images/floating_retainer.jpeg", "Assets/timer_images/blue_doctor_man.jpg"];
 
@@ -47,6 +48,7 @@ function botLeftImg() {
 
 // Changes the top right image on the index
 function topRightImg() {
+    // same as botLeftImg, but for the top right image
     var currentImg = document.getElementById("topRight");
     var images = ["Assets/timer_images/lady_check-up.jpg", "Assets/timer_images/grey-haired_doctor.jpg", "Assets/CTE_53.jpg", "Assets/timer_images/blonde_doctor.jpg", "Assets/timer_images/toothbrush.jpg"];
 
@@ -63,6 +65,7 @@ function topRightImg() {
 
 // Changes the bottom right image on the index 
 function botRightImg() {
+    // same as topRightImg, but for the bottom right image 
     var currentImg = document.getElementById("botRight");
     var images = ["Assets/timer_images/red-dentist-table.jpeg", "Assets/timer_images/2-dentist-people.jpg", "Assets/0050_Dental_5.jpg", "Assets/timer_images/dental-office.jpg", "Assets/timer_images/x-ray.jpg"];
 
