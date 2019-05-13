@@ -10,11 +10,7 @@
     src: url("Assets/Fonts/Nunito_Sans/NunitoSans-Light.ttf");
 }
 
-<<<<<<< Updated upstream
-/*Basic background image and fonts */
-=======
 /* Changes background to the chair.jpg and orange if the picture is not available, fixes it and it covers the whole page. The body uses the font nunito light and has no padding or margin */
->>>>>>> Stashed changes
 body {
     background: url('Assets/chair.jpg'), #f7913d;
     background-attachment: fixed;
@@ -24,22 +20,14 @@ body {
     margin: 0;
 }
 
-<<<<<<< Updated upstream
-/*Font and background color */
-=======
 /* the header is orange, using a engschrift font with a padding of 5px on the bottom */
->>>>>>> Stashed changes
 header {
     background: #f7913d;
     font-family: 'Engschrift', sans-serif;
     padding-bottom: 5px;
 }
 
-<<<<<<< Updated upstream
 /*Sizing styles for the nav */
-=======
-/* The navigation has no top/bottom margin and auto side margins */
->>>>>>> Stashed changes
 nav {
     margin: 0 auto;
 }
@@ -73,18 +61,16 @@ article {
     text-align: center;
 }
 
-<<<<<<< Updated upstream
-=======
 
 /* each element with a textbox class has a background color of gray and text color of white */
->>>>>>> Stashed changes
 .textbox {
     background-color: rgb(77, 77, 79);
     color: white;
 }
 
 /* each element with a textbox and box class  has an orange border with a radius of two*/
-.textbox .box {
+.textbox,
+.box {
     border: 3px solid #f7913d;
     border-radius: 2%;
 }
@@ -130,16 +116,13 @@ article {
     color: #f7913d;
 }
 
-<<<<<<< Updated upstream
 /* Styles for the links in the aside box */
 aside#info p {
     margin-top: 0;
 
 }
 
-=======
 /* button element has a margin top and left of 5 and 25 percent, a color of oragne and a font size of 15px */
->>>>>>> Stashed changes
 button {
     color: #f7913d;
     font-size: 15px;
