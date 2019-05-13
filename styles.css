@@ -1,14 +1,20 @@
+/* Engschrift font link */
 @font-face {
     font-family: Engschrift;
     src: url("Assets/Fonts/DINEngschrift/DINEng");
 }
 
+/* Nunito light link */
 @font-face {
     font-family: Nunito Light;
     src: url("Assets/Fonts/Nunito_Sans/NunitoSans-Light.ttf");
 }
 
+<<<<<<< Updated upstream
 /*Basic background image and fonts */
+=======
+/* Changes background to the chair.jpg and orange if the picture is not available, fixes it and it covers the whole page. The body uses the font nunito light and has no padding or margin */
+>>>>>>> Stashed changes
 body {
     background: url('Assets/chair.jpg'), #f7913d;
     background-attachment: fixed;
@@ -18,22 +24,32 @@ body {
     margin: 0;
 }
 
+<<<<<<< Updated upstream
 /*Font and background color */
+=======
+/* the header is orange, using a engschrift font with a padding of 5px on the bottom */
+>>>>>>> Stashed changes
 header {
     background: #f7913d;
     font-family: 'Engschrift', sans-serif;
     padding-bottom: 5px;
 }
 
+<<<<<<< Updated upstream
 /*Sizing styles for the nav */
+=======
+/* The navigation has no top/bottom margin and auto side margins */
+>>>>>>> Stashed changes
 nav {
     margin: 0 auto;
 }
 
+/* No list style in the navigation unordered list */
 nav ul {
     list-style: none;
 }
 
+/* For each link in the unordered nav list, the font size is 1.3em, displayed inline-block with no top/bottom margin and auto side margins and a width of 20% */
 nav ul li {
     font-size: 1.3em;
     display: inline-block;
@@ -41,6 +57,7 @@ nav ul li {
     width: 20%;
 }
 
+/* For each a tag in a link in the unordered nav list, the width is 50%, the text is centered, with white text, block display, and no top/bottom margin and auto side margins*/
 nav ul li a {
     width: 50%;
     text-align: center;
@@ -49,34 +66,35 @@ nav ul li a {
     margin: 0 auto;
 }
 
+/* Ech aside and article has a box shadow and the text aligned in the center */
 aside,
 article {
     box-shadow: -5px 5px 10px rgb(29, 29, 29);
     text-align: center;
 }
 
+<<<<<<< Updated upstream
+=======
+
+/* each element with a textbox class has a background color of gray and text color of white */
+>>>>>>> Stashed changes
 .textbox {
     background-color: rgb(77, 77, 79);
     color: white;
 }
 
-.textbox,
-.box {
+/* each element with a textbox and box class  has an orange border with a radius of two*/
+.textbox .box {
     border: 3px solid #f7913d;
     border-radius: 2%;
 }
 
-footer {
-    background: #f7913d;
-    color: white;
-    height: 65px;
-    font-family: 'Engschrift', sans-serif;
-}
-
+/* textbox class paragraph inputs have a bottom margin of 1 view height */
 .textbox p input {
     margin-bottom: 1vh;
 }
 
+/* textbox class headers(1) have a font size of 1.75em, 5px padding, orange color, and 1.75 line height */
 .textbox h1 {
     font-size: 1.75em;
     padding: 5px;
@@ -84,12 +102,14 @@ footer {
     line-height: 1.75em;
 }
 
+/* textbox class headers(4) have a color of orange */
 .textbox h4 {
     color: #f7913d;
     padding: 5px;
     font-size: 1em;
 }
 
+/* textbox class a elements have to text decoration, 10px padidng, and transition the font size and text shadow .5 and .6 seconds respectivley */
 .textbox a {
     text-decoration: none;
     padding: 10px;
@@ -97,23 +117,29 @@ footer {
     transition: text-shadow, .6s;
 }
 
+/* When the textbox a is hovered over, the text gets smaller and gains a white text shadow */
 .textbox a:hover {
     color: white;
     font-size: 1.9vw;
     text-shadow: 0px 0px 10px white;
 }
 
+/* When the textbox a is visited or in a regular state, the text is orange */
 .textbox a:link,
 .textbox a:visited {
     color: #f7913d;
 }
 
+<<<<<<< Updated upstream
 /* Styles for the links in the aside box */
 aside#info p {
     margin-top: 0;
 
 }
 
+=======
+/* button element has a margin top and left of 5 and 25 percent, a color of oragne and a font size of 15px */
+>>>>>>> Stashed changes
 button {
     color: #f7913d;
     font-size: 15px;
@@ -121,16 +147,19 @@ button {
     margin-top: 5%;
 }
 
+/* When the button is hovere over, it gains an orange box shadow */
 button:hover {
     box-shadow: 0px 0px 5px rgb(255, 186, 59);
 
 }
 
+/* id questions width and height */
 #questions {
     width: 100%;
     height: 15em;
 }
 
+/* id submit font color, font size, and width */
 #submit {
     color: #f7913d;
     font-size: 1em;
@@ -138,10 +167,12 @@ button:hover {
 
 }
 
+/* when submit is hovered over, it gains a box shadow */
 #submit:hover {
     box-shadow: 0px 0px 5px rgb(255, 186, 59);
 }
 
+/* when submit is being clicked, it has a gray background */
 #submit:active {
     background-color: rgb(77, 77, 79);
 }
@@ -224,6 +255,8 @@ input#phone:focus:invalid {
 
 /* Bigger than 1000 */
 @media only screen and (min-width: 1000px) {
+
+    /* text link hover size  */
     .textbox a:hover {
         font-size: 1.4vw;
     }
@@ -237,6 +270,7 @@ input#phone:focus:invalid {
 /* Smaller than 850 */
 @media only screen and (max-width: 850px) {
 
+    /* Width and font size adjustments for a smaller screen */
     aside#address,
     aside#form {
         width: 40%;
